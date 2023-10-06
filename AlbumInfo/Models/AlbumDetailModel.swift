@@ -7,27 +7,29 @@
 
 import Foundation
 
-//struct SongData: Codable { // feed
-//	let results: Results
-//	let genre: Genre
-//}
-
-struct Results: Codable {
-	let artistName: String
-	let songTitle: String // currently name
-	let albumArtwork: String // currently artworkUrl100
-	
-	enum CodingKeys: String, CodingKey {
-		case artistName
-		case songTitle = "name"
-		case albumArtwork = "artworkUrl100"
-	}
+struct Welcome: Codable, Hashable {
+    let feed: Feed
 }
 
-//struct Genre: Codable {
-//	let songURL: String // currently url
-//
-//	enum CodingKeys: String, CodingKey {
-//		case songURL = "url"
-//	}
-//}
+// MARK: - Feed
+
+struct Feed: Codable, Hashable {
+    let results: [Result]
+}
+
+// MARK: - Result
+
+struct Result: Codable, Hashable {
+    let artistName: String
+    let songTitle: String
+    let albumArtwork: String
+    let songUrl: String
+    let kind: String
+
+    enum CodingKeys: String, CodingKey {
+        case artistName, kind
+        case songTitle = "name"
+        case albumArtwork = "artworkUrl100"
+        case songUrl = "url"
+    }
+}

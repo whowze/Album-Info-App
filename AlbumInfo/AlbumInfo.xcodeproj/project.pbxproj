@@ -14,6 +14,7 @@
 		5C34B9642ABA408500F47C4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C34B9632ABA408500F47C4A /* Assets.xcassets */; };
 		5C34B9672ABA408500F47C4A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C34B9662ABA408500F47C4A /* Preview Assets.xcassets */; };
 		5C34B9712ABA53C200F47C4A /* AlbumDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C34B9702ABA53C200F47C4A /* AlbumDetailModel.swift */; };
+		5CF93EF02AD30A6500EB2632 /* AlbumArtworkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF93EEF2AD30A6500EB2632 /* AlbumArtworkView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		5C34B9662ABA408500F47C4A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5C34B9702ABA53C200F47C4A /* AlbumDetailModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumDetailModel.swift; sourceTree = "<group>"; };
 		5C34B9722ABA649500F47C4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		5CF93EEF2AD30A6500EB2632 /* AlbumArtworkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumArtworkView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 			children = (
 				5C34B9612ABA408300F47C4A /* AlbumInfoView.swift */,
 				5C214EB12AC0D9D20021DCD9 /* AlbumDetailsView.swift */,
+				5CF93EEF2AD30A6500EB2632 /* AlbumArtworkView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -173,6 +176,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C34B9712ABA53C200F47C4A /* AlbumDetailModel.swift in Sources */,
+				5CF93EF02AD30A6500EB2632 /* AlbumArtworkView.swift in Sources */,
 				5C214EB42AC0DD7E0021DCD9 /* HTTPClient.swift in Sources */,
 				5C34B9622ABA408300F47C4A /* AlbumInfoView.swift in Sources */,
 				5C34B9602ABA408300F47C4A /* AlbumInfoApp.swift in Sources */,

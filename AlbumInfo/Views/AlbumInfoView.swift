@@ -15,13 +15,13 @@ struct AlbumInfoView: View {
             List(albumData.feed, id: \.self) { result in
                 NavigationLink(destination: AlbumDetailsView(result: result)) {
                     VStack(alignment: .leading, spacing: 10) {
-                        HStack {
+                       
                             Text(result.artistName)
-                        }
                         
-                        HStack {
+                        
+                       
                             Text(result.songTitle)
-                        }
+                        
                     }
                     
                     .padding()

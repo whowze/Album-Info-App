@@ -9,11 +9,11 @@ import SwiftUI
 
 struct AlbumDetailsView: View {
     let result: Result
-    
+    @State private var imageData: Data? = nil
     
     var body: some View {
         VStack {
-            
+
             Image(systemName: "music.mic.circle.fill")
                 .resizable()
                 .scaledToFit()
@@ -36,10 +36,6 @@ struct AlbumDetailsView: View {
             Spacer()
         }
     }
-    
-    
-    
-    
     
     
     

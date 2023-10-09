@@ -17,10 +17,10 @@ struct AlbumInfoView: View {
                     VStack(alignment: .leading, spacing: 10) {
                        
                             Text(result.artistName)
-                        
-                        
-                       
+
                             Text(result.songTitle)
+                            
+                            
                         
                     }
                     

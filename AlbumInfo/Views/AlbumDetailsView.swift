@@ -13,12 +13,9 @@ struct AlbumDetailsView: View {
     
     var body: some View {
         VStack {
-            Image(systemName: "music.mic.circle.fill")
-                .resizable()
-                .scaledToFit()
-                .frame(height: 200)
-                .padding(.top, 50)
-                .padding(.bottom, 100)
+            URLImage(url: result.albumArtwork)
+                .frame(width: 300, height: 300)
+                .padding()
 
             VStack(spacing: 15) {
                 Text(result.artistName)

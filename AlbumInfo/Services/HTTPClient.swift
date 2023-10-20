@@ -12,7 +12,7 @@ class AlbumData: ObservableObject {
 
     func fetch() {
         // create the URL
-        guard let url = URL(string: "https://rss.applemarketingtools.com/api/v2/us/music/most-played/100/songs.json") else {
+        guard let url = URL(string: "https://rss.applemarketingtools.com/api/v2/us/music/most-played/40/songs.json") else {
             return
         }
         

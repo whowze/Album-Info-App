@@ -16,7 +16,7 @@ struct AlbumInfoView: View {
                 NavigationLink(destination: AlbumDetailsView(result: result)) {
                     HStack {
                         URLImage(url: result.albumArtwork)
-                            .frame(width: 50, height: 50)
+                            .frame(width: 100, height: 100)
                     }
                         VStack(alignment: .leading, spacing: 10) {
                             Text(result.artistName)
